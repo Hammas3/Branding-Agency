@@ -1,0 +1,1052 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branding Agency | Global Creative Branding & Identity Solutions</title>
+    <meta name="description" content="Strategic branding, memorable visual identities and creative design solutions for businesses ready to stand out worldwide.">
+    <meta name="keywords" content="branding agency, brand strategy, logo design, visual identity, packaging design, social media branding, creative agency">
+    <link rel="canonical" href="https://brandingagency.com/">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Branding Agency | Global Creative Branding & Identity Solutions">
+    <meta property="og:description" content="Strategic branding, memorable visual identities and creative design solutions for businesses ready to stand out worldwide.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
+    <meta name="theme-color" content="#0a0a0c">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        agency: {
+                            dark: '#0a0a0c',
+                            card: '#131318',
+                            border: '#23232d',
+                            accent: '#6366f1',
+                            gold: '#f59e0b',
+                            muted: '#94a3b8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Instrument Serif"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #f8fafc;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .glow-effect {
+            background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.12) 0%, transparent 60%);
+        }
+        .card-glow:hover {
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.15);
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0c; }
+        ::-webkit-scrollbar-thumb { background: #23232d; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
+    </style>
+</head>
+<body class="bg-agency-dark text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- TOP NOTIFICATION BAR -->
+    <div class="bg-indigo-600 text-white text-xs py-2 px-4 text-center font-medium tracking-wide">
+        <span>Available Worldwide for Remote & Project-Based Work.</span>
+        <a href="https://wa.me/923179284938" target="_blank" class="underline ml-2 font-semibold hover:text-indigo-200">Start via WhatsApp &rarr;</a>
+    </div>
+
+    <!-- NAVBAR -->
+    <header id="navbar" class="sticky top-0 z-50 glass-nav border-b border-agency-border transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl sm:text-2xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-indigo-500 inline-block"></span>
+                Branding Agency
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-agency-muted">
+                <a href="#home" class="hover:text-white transition-colors">Home</a>
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#personality" class="hover:text-white transition-colors">Personality</a>
+                <a href="#identity" class="hover:text-white transition-colors">Brand Identity</a>
+                <a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a>
+                <a href="#process" class="hover:text-white transition-colors">Process</a>
+                <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+
+            <!-- Right CTA -->
+            <div class="hidden sm:flex items-center space-x-4">
+                <a href="https://wa.me/923179284938" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs uppercase tracking-widest font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg shadow-indigo-600/20">
+                    Start a Project
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" aria-label="Toggle Navigation" class="lg:hidden text-white focus:outline-none p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden glass-nav border-b border-agency-border px-6 py-6 space-y-4">
+            <a href="#home" class="block text-sm font-medium text-agency-muted hover:text-white mobile-link">Home</a>
+            <a href="#about" class="block text-sm font-medium text-agency-muted hover:text-white mobile-link">About</a>
+            <a href="#services" class="block text-sm font-medium text-agency-muted hover:text-white mobile-link">Services</a>
+            <a href="#personality" class="block text-sm font-medium text-agency-muted hover:text-white mobile-link">Personality</a>
+            <a href="#identity" class="block text-sm font-medium text-agency-muted hover:text-white mobile-link">Brand Identity</a>
+            <a href="#portfolio" class="block text-sm font-medium text-agency-muted hover:text-white mobile-link">Portfolio</a>
+            <a href="#process" class="block text-sm font-medium text-agency-muted hover:text-white mobile-link">Process</a>
+            <a href="#faq" class="block text-sm font-medium text-agency-muted hover:text-white mobile-link">FAQ</a>
+            <a href="#contact" class="block text-sm font-medium text-agency-muted hover:text-white mobile-link">Contact</a>
+            <div class="pt-2">
+                <a href="https://wa.me/923179284938" target="_blank" class="block text-center bg-indigo-600 text-white text-xs uppercase tracking-widest font-semibold py-3 rounded-full">
+                    Start a Project on WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative min-h-[90vh] flex items-center justify-center pt-16 pb-24 glow-effect overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10">
+            <div class="lg:col-span-7 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-agency-border bg-agency-card text-xs font-medium text-indigo-400 mb-6 uppercase tracking-widest">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Global Creative Branding Agency
+                </div>
+                <h1 class="text-4xl sm:text-6xl xl:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1]">
+                    Build a Brand <br><span class="font-serif italic font-normal text-indigo-400">People Remember.</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-agency-muted max-w-2xl mx-auto lg:mx-0 mb-10 font-light leading-relaxed">
+                    Strategic branding, memorable visual identities and creative design solutions for businesses ready to stand out worldwide.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="https://wa.me/923179284938" target="_blank" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm tracking-wider uppercase px-8 py-4 rounded-full transition-all text-center shadow-lg shadow-indigo-600/30">
+                        Start a Project
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto border border-agency-border hover:border-indigo-500 text-white font-medium text-sm tracking-wider uppercase px-8 py-4 rounded-full transition-all text-center">
+                        Explore Our Services
+                    </a>
+                </div>
+            </div>
+
+            <!-- Creative Branding Visual Presentation -->
+            <div class="lg:col-span-5">
+                <div class="relative bg-agency-card border border-agency-border p-6 sm:p-8 rounded-3xl shadow-2xl card-glow transition-all">
+                    <div class="absolute -top-3 -right-3 bg-indigo-600 text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Identity System</div>
+                    <div class="space-y-6">
+                        <!-- Brand Card Mockup Item -->
+                        <div class="bg-agency-dark border border-agency-border p-5 rounded-2xl flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-agency-muted uppercase tracking-wider block mb-1">Primary Logomark</span>
+                                <div class="text-xl font-serif font-bold text-white tracking-wide">VANGUARD STUDIOS</div>
+                            </div>
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 font-bold">VS</div>
+                        </div>
+
+                        <!-- Color Swatches Grid -->
+                        <div>
+                            <span class="text-xs text-agency-muted uppercase tracking-wider block mb-2">Curated Color Palette</span>
+                            <div class="grid grid-cols-4 gap-3">
+                                <div class="h-12 rounded-xl bg-slate-900 border border-agency-border"></div>
+                                <div class="h-12 rounded-xl bg-indigo-600"></div>
+                                <div class="h-12 rounded-xl bg-amber-500"></div>
+                                <div class="h-12 rounded-xl bg-slate-100"></div>
+                            </div>
+                        </div>
+
+                        <!-- Typography Sample -->
+                        <div class="bg-agency-dark border border-agency-border p-4 rounded-2xl">
+                            <span class="text-xs text-agency-muted uppercase tracking-wider block mb-1">Typography Hierarchy</span>
+                            <p class="text-lg font-serif italic text-indigo-300">"Design is the silent ambassador of your brand."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 border-t border-agency-border bg-agency-card/30">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-6">
+                <span class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-3 block">About Our Agency</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold font-serif italic mb-6 leading-tight">Brand Strategy Meets Creative Design</h2>
+                <p class="text-agency-muted font-light leading-relaxed mb-6">
+                    We partner with ambitious startups, local businesses, entrepreneurs and established global brands to craft distinctive identities that resonate deeply with audiences. Our approach merges meticulous market positioning with high-end aesthetic execution.
+                </p>
+                <p class="text-agency-muted font-light leading-relaxed mb-8">
+                    Whether you require a complete brand overhaul, an iconic logo design, comprehensive visual guidelines, or professional marketing assets, our global remote team delivers excellence tailored to your objectives.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-6 border-t border-agency-border">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-1">Global & Remote</h3>
+                        <p class="text-xs text-agency-muted uppercase tracking-wider">Project-Based Collaboration</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-1">Tailored Craft</h3>
+                        <p class="text-xs text-agency-muted uppercase tracking-wider">Custom Identity Systems</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-6">
+                <div class="relative rounded-3xl overflow-hidden border border-agency-border shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop" alt="Branding & Design Studio Workspace" class="w-full h-[450px] object-cover filter grayscale contrast-125 hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-agency-dark via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-8 left-8 right-8">
+                        <span class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-1 block">Creative Excellence</span>
+                        <h3 class="text-2xl font-serif text-white">Elevating brands through strategic visual storytelling.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 border-t border-agency-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl mb-16">
+                <span class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-3 block">Our Expertise</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">Comprehensive Branding Services</h2>
+                <p class="text-agency-muted font-light">End-to-end creative solutions designed to build market authority and memorable visual distinction.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-agency-card border border-agency-border p-8 rounded-2xl card-glow transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-xs font-mono text-indigo-400">01</span>
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Brand Strategy</h3>
+                        <p class="text-agency-muted text-sm font-light leading-relaxed mb-6">Defining market positioning, brand architecture, tone of voice, and audience engagement frameworks.</p>
+                    </div>
+                    <a href="https://wa.me/923179284938" target="_blank" class="text-xs uppercase tracking-widest text-indigo-400 hover:text-white font-semibold inline-flex items-center gap-1 transition-colors">
+                        Discuss Your Brand &rarr;
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-agency-card border border-agency-border p-8 rounded-2xl card-glow transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-xs font-mono text-indigo-400">02</span>
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Logo Design</h3>
+                        <p class="text-agency-muted text-sm font-light leading-relaxed mb-6">Crafting custom, timeless primary logomarks and responsive variants engineered for instant brand recognition.</p>
+                    </div>
+                    <a href="https://wa.me/923179284938" target="_blank" class="text-xs uppercase tracking-widest text-indigo-400 hover:text-white font-semibold inline-flex items-center gap-1 transition-colors">
+                        Discuss Your Brand &rarr;
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-agency-card border border-agency-border p-8 rounded-2xl card-glow transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-xs font-mono text-indigo-400">03</span>
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Visual Identity</h3>
+                        <p class="text-agency-muted text-sm font-light leading-relaxed mb-6">Establishing color palettes, typography systems, imagery direction, and cohesive design elements.</p>
+                    </div>
+                    <a href="https://wa.me/923179284938" target="_blank" class="text-xs uppercase tracking-widest text-indigo-400 hover:text-white font-semibold inline-flex items-center gap-1 transition-colors">
+                        Discuss Your Brand &rarr;
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-agency-card border border-agency-border p-8 rounded-2xl card-glow transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-xs font-mono text-indigo-400">04</span>
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Brand Guidelines</h3>
+                        <p class="text-agency-muted text-sm font-light leading-relaxed mb-6">Comprehensive digital brand books ensuring immaculate consistency across all internal and external teams.</p>
+                    </div>
+                    <a href="https://wa.me/923179284938" target="_blank" class="text-xs uppercase tracking-widest text-indigo-400 hover:text-white font-semibold inline-flex items-center gap-1 transition-colors">
+                        Discuss Your Brand &rarr;
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-agency-card border border-agency-border p-8 rounded-2xl card-glow transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-xs font-mono text-indigo-400">05</span>
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Social Media Branding</h3>
+                        <p class="text-agency-muted text-sm font-light leading-relaxed mb-6">Custom profile assets, editable templates, highlight icons, and visual frameworks for high engagement.</p>
+                    </div>
+                    <a href="https://wa.me/923179284938" target="_blank" class="text-xs uppercase tracking-widest text-indigo-400 hover:text-white font-semibold inline-flex items-center gap-1 transition-colors">
+                        Discuss Your Brand &rarr;
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-agency-card border border-agency-border p-8 rounded-2xl card-glow transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-xs font-mono text-indigo-400">06</span>
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Packaging Design</h3>
+                        <p class="text-agency-muted text-sm font-light leading-relaxed mb-6">Tactile product packaging and unboxing experiences engineered to dominate shelves and delight buyers.</p>
+                    </div>
+                    <a href="https://wa.me/923179284938" target="_blank" class="text-xs uppercase tracking-widest text-indigo-400 hover:text-white font-semibold inline-flex items-center gap-1 transition-colors">
+                        Discuss Your Brand &rarr;
+                    </a>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="bg-agency-card border border-agency-border p-8 rounded-2xl card-glow transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-xs font-mono text-indigo-400">07</span>
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Marketing Design</h3>
+                        <p class="text-agency-muted text-sm font-light leading-relaxed mb-6">High-converting pitch decks, brochures, corporate stationery, and advertising collateral.</p>
+                    </div>
+                    <a href="https://wa.me/923179284938" target="_blank" class="text-xs uppercase tracking-widest text-indigo-400 hover:text-white font-semibold inline-flex items-center gap-1 transition-colors">
+                        Discuss Your Brand &rarr;
+                    </a>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="bg-agency-card border border-agency-border p-8 rounded-2xl card-glow transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-xs font-mono text-indigo-400">08</span>
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Creative Direction</h3>
+                        <p class="text-agency-muted text-sm font-light leading-relaxed mb-6">Expert guidance and oversight for brand campaigns, product launches, and visual storytelling.</p>
+                    </div>
+                    <a href="https://wa.me/923179284938" target="_blank" class="text-xs uppercase tracking-widest text-indigo-400 hover:text-white font-semibold inline-flex items-center gap-1 transition-colors">
+                        Discuss Your Brand &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAND PERSONALITY SELECTOR -->
+    <section id="personality" class="py-24 border-t border-agency-border bg-agency-card/20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-3 block">Interactive Selector</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">What's Your Brand Personality?</h2>
+                <p class="text-agency-muted font-light">Select a brand tone below to preview our strategic creative direction.</p>
+            </div>
+
+            <!-- Personality Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
+                <button onclick="setPersonality('minimal')" class="personality-btn px-6 py-3 rounded-full text-sm font-semibold border border-agency-border bg-agency-card hover:border-indigo-500 transition-all active-personality">Minimal</button>
+                <button onclick="setPersonality('bold')" class="personality-btn px-6 py-3 rounded-full text-sm font-semibold border border-agency-border bg-agency-card hover:border-indigo-500 transition-all">Bold</button>
+                <button onclick="setPersonality('elegant')" class="personality-btn px-6 py-3 rounded-full text-sm font-semibold border border-agency-border bg-agency-card hover:border-indigo-500 transition-all">Elegant</button>
+                <button onclick="setPersonality('modern')" class="personality-btn px-6 py-3 rounded-full text-sm font-semibold border border-agency-border bg-agency-card hover:border-indigo-500 transition-all">Modern</button>
+                <button onclick="setPersonality('playful')" class="personality-btn px-6 py-3 rounded-full text-sm font-semibold border border-agency-border bg-agency-card hover:border-indigo-500 transition-all">Playful</button>
+                <button onclick="setPersonality('premium')" class="personality-btn px-6 py-3 rounded-full text-sm font-semibold border border-agency-border bg-agency-card hover:border-indigo-500 transition-all">Premium</button>
+            </div>
+
+            <!-- Personality Preview Card -->
+            <div class="max-w-4xl mx-auto bg-agency-card border border-agency-border rounded-3xl p-8 sm:p-12 shadow-2xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <span id="p-tag" class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-2 block">Minimalist Direction</span>
+                        <h3 id="p-title" class="text-2xl sm:text-3xl font-bold mb-4">Clean Whitespace & Precision</h3>
+                        <p id="p-desc" class="text-agency-muted text-sm font-light leading-relaxed mb-6">Prioritizes clarity, subtle contrast, generous whitespace, and restrained typography for refined sophistication.</p>
+                        <a href="https://wa.me/923179284938" target="_blank" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs uppercase tracking-widest font-semibold px-6 py-3 rounded-full transition-all">
+                            Discuss This Style on WhatsApp
+                        </a>
+                    </div>
+                    <div class="bg-agency-dark border border-agency-border p-6 rounded-2xl space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-agency-muted uppercase tracking-wider">Typography Style</span>
+                            <span id="p-font" class="text-sm font-medium text-white">Sans-Serif / Clean</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-agency-muted uppercase tracking-wider">Color Mood</span>
+                            <span id="p-color" class="text-sm font-medium text-white">Monochromatic & Neutral</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-agency-muted uppercase tracking-wider">Visual Tone</span>
+                            <span id="p-tone" class="text-sm font-medium text-white">Sophisticated & Restrained</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAND IDENTITY SECTION -->
+    <section id="identity" class="py-24 border-t border-agency-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl mb-16">
+                <span class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-3 block">Visual Ecosystem</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">Detailed Brand Identity Showcase</h2>
+                <p class="text-agency-muted font-light">Every touchpoint meticulously designed to build cohesive recognition.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-agency-card border border-agency-border rounded-2xl overflow-hidden group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=800&auto=format&fit=crop" alt="Logo System and Typography" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Logo & Typography System</h3>
+                        <p class="text-agency-muted text-sm font-light">Vector primary marks, responsive lockups, and custom typographic pairings.</p>
+                    </div>
+                </div>
+                <div class="bg-agency-card border border-agency-border rounded-2xl overflow-hidden group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://media.istockphoto.com/id/2284122869/photo/wrapped-christmas-presents-craft-paper-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=iKPZYgQPJWpE1Ibds68eGTFuto55vem_SaGp1GIxr8Q=" alt="Packaging and Stationery Design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Packaging & Stationery</h3>
+                        <p class="text-agency-muted text-sm font-light">Business cards, letterheads, packaging boxes, and tactile collateral suites.</p>
+                    </div>
+                </div>
+                <div class="bg-agency-card border border-agency-border rounded-2xl overflow-hidden group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop" alt="Digital Branding & Social Media" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Digital & Social Ecosystem</h3>
+                        <p class="text-agency-muted text-sm font-light">Social media templates, highlight icons, and digital advertising kits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="py-24 border-t border-agency-border bg-agency-card/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-3 block">Portfolio</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Selected Creative Work</h2>
+                </div>
+                <p class="text-agency-muted text-sm font-light mt-4 md:mt-0 max-w-sm">Concept branding projects crafted with precision across diverse industries.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-agency-card border border-agency-border rounded-3xl overflow-hidden group">
+                    <div class="h-72 overflow-hidden relative">
+                        <img src="https://media.istockphoto.com/id/2150017797/photo/creative-glowing-ai-brain-hologram-and-circuit-on-blurry-toned-backdrop-artificial.webp?a=1&b=1&s=612x612&w=0&k=20&c=TkrEMS0PPHFuQxoQ3dUS2iY3LXrnr2Rt5n1-gy5_kAU=" alt="Technology Brand Identity" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 left-4 bg-agency-dark/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono text-indigo-400 border border-agency-border">Concept Project</div>
+                    </div>
+                    <div class="p-8">
+                        <span class="text-xs uppercase tracking-widest text-agency-muted font-mono mb-2 block">Brand Identity & Logo System</span>
+                        <h3 class="text-2xl font-bold mb-3">Veloce Enterprise AI</h3>
+                        <p class="text-agency-muted text-sm font-light leading-relaxed mb-6">Complete visual identity system for an artificial intelligence SaaS platform, featuring futuristic typography and sleek dark-mode aesthetics.</p>
+                        <a href="https://wa.me/923179284938" target="_blank" class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-indigo-400 hover:text-white transition-colors">
+                            View Project on WhatsApp &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-agency-card border border-agency-border rounded-3xl overflow-hidden group">
+                    <div class="h-72 overflow-hidden relative">
+                        <img src="https://plus.unsplash.com/premium_photo-1732449368194-655ad29627db?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8UGFja2FnaW5nJTIwJTI2JTIwU3RhdGlvbmVyeXxlbnwwfHwwfHx8MA%3D%3D" alt="Packaging Design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 left-4 bg-agency-dark/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono text-indigo-400 border border-agency-border">Concept Project</div>
+                    </div>
+                    <div class="p-8">
+                        <span class="text-xs uppercase tracking-widest text-agency-muted font-mono mb-2 block">Packaging & Stationery</span>
+                        <h3 class="text-2xl font-bold mb-3">Maison Noir Haute Couture</h3>
+                        <p class="text-agency-muted text-sm font-light leading-relaxed mb-6">Luxury fashion branding featuring minimalist editorial typography, foil-stamped packaging suites, and premium unboxing collateral.</p>
+                        <a href="https://wa.me/923179284938" target="_blank" class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-indigo-400 hover:text-white transition-colors">
+                            View Project on WhatsApp &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAND WORKFLOW -->
+    <section id="process" class="py-24 border-t border-agency-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl mb-16">
+                <span class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-3 block">Workflow</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">Our Creative Process</h2>
+                <p class="text-agency-muted font-light">A structured, collaborative approach ensuring exceptional branding results.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                <div class="bg-agency-card border border-agency-border p-6 rounded-2xl">
+                    <span class="text-xs font-mono text-indigo-400 mb-4 block">01</span>
+                    <h3 class="text-lg font-bold mb-2">Discover</h3>
+                    <p class="text-agency-muted text-xs font-light leading-relaxed">Understand the business, audience and brand direction.</p>
+                </div>
+                <div class="bg-agency-card border border-agency-border p-6 rounded-2xl">
+                    <span class="text-xs font-mono text-indigo-400 mb-4 block">02</span>
+                    <h3 class="text-lg font-bold mb-2">Strategy</h3>
+                    <p class="text-agency-muted text-xs font-light leading-relaxed">Define the brand personality, positioning and creative direction.</p>
+                </div>
+                <div class="bg-agency-card border border-agency-border p-6 rounded-2xl">
+                    <span class="text-xs font-mono text-indigo-400 mb-4 block">03</span>
+                    <h3 class="text-lg font-bold mb-2">Create</h3>
+                    <p class="text-agency-muted text-xs font-light leading-relaxed">Develop the visual identity and creative assets.</p>
+                </div>
+                <div class="bg-agency-card border border-agency-border p-6 rounded-2xl">
+                    <span class="text-xs font-mono text-indigo-400 mb-4 block">04</span>
+                    <h3 class="text-lg font-bold mb-2">Refine</h3>
+                    <p class="text-agency-muted text-xs font-light leading-relaxed">Polish the identity and prepare the final brand system.</p>
+                </div>
+                <div class="bg-agency-card border border-agency-border p-6 rounded-2xl">
+                    <span class="text-xs font-mono text-indigo-400 mb-4 block">05</span>
+                    <h3 class="text-lg font-bold mb-2">Deliver</h3>
+                    <p class="text-agency-muted text-xs font-light leading-relaxed">Provide organized brand-ready creative assets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRANDING SERVICES SELECTOR -->
+    <section class="py-24 border-t border-agency-border bg-agency-card/20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-3 block">Custom Selector</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">What Does Your Brand Need?</h2>
+                <p class="text-agency-muted font-light">Select your primary focus to discuss directly with our agency.</p>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
+                <button onclick="setServiceNeed('logo')" class="service-need-btn px-6 py-3 rounded-full text-sm font-semibold border border-agency-border bg-agency-card hover:border-indigo-500 transition-all active-service">New Logo</button>
+                <button onclick="setServiceNeed('identity')" class="service-need-btn px-6 py-3 rounded-full text-sm font-semibold border border-agency-border bg-agency-card hover:border-indigo-500 transition-all">Complete Brand Identity</button>
+                <button onclick="setServiceNeed('social')" class="service-need-btn px-6 py-3 rounded-full text-sm font-semibold border border-agency-border bg-agency-card hover:border-indigo-500 transition-all">Social Media Branding</button>
+                <button onclick="setServiceNeed('packaging')" class="service-need-btn px-6 py-3 rounded-full text-sm font-semibold border border-agency-border bg-agency-card hover:border-indigo-500 transition-all">Packaging</button>
+                <button onclick="setServiceNeed('refresh')" class="service-need-btn px-6 py-3 rounded-full text-sm font-semibold border border-agency-border bg-agency-card hover:border-indigo-500 transition-all">Brand Refresh</button>
+                <button onclick="setServiceNeed('marketing')" class="service-need-btn px-6 py-3 rounded-full text-sm font-semibold border border-agency-border bg-agency-card hover:border-indigo-500 transition-all">Marketing Design</button>
+            </div>
+
+            <div class="max-w-3xl mx-auto bg-agency-card border border-agency-border rounded-3xl p-8 sm:p-12 text-center shadow-xl">
+                <h3 id="sn-title" class="text-2xl font-bold mb-3">New Logo Design</h3>
+                <p id="sn-desc" class="text-agency-muted text-sm font-light leading-relaxed mb-8">Custom, memorable primary logomark and responsive vector assets engineered to capture your brand essence.</p>
+                <a href="https://wa.me/923179284938" target="_blank" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs uppercase tracking-widest font-semibold px-8 py-4 rounded-full transition-all shadow-lg shadow-indigo-600/30">
+                    Discuss This on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY BRANDING MATTERS -->
+    <section class="py-24 border-t border-agency-border">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-6">
+                <span class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-3 block">Strategic Value</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6">Why Branding Matters</h2>
+                <p class="text-agency-muted font-light leading-relaxed mb-6">
+                    In a crowded global marketplace, your brand is your most valuable business asset. Exceptional branding transcends aesthetics—it establishes market authority, fosters deep trust, and drives sustainable customer loyalty.
+                </p>
+                <ul class="space-y-4 text-sm font-medium">
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-indigo-500"></span> Strong visual identity & memorable positioning</li>
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-indigo-500"></span> Consistent communication across every customer touchpoint</li>
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-indigo-500"></span> Professional appearance that builds instant trust</li>
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-indigo-500"></span> Clear differentiation from competitors</li>
+                </ul>
+            </div>
+            <div class="lg:col-span-6">
+                <div class="bg-agency-card border border-agency-border p-8 sm:p-12 rounded-3xl space-y-6">
+                    <h3 class="text-2xl font-serif">Ready to elevate your brand presence?</h3>
+                    <p class="text-agency-muted text-sm font-light leading-relaxed">Connect with our team to discuss your creative direction, brand strategy, and upcoming project goals.</p>
+                    <a href="https://wa.me/923179284938" target="_blank" class="block text-center bg-indigo-600 hover:bg-indigo-500 text-white text-xs uppercase tracking-widest font-semibold py-4 rounded-full transition-all">
+                        Start on WhatsApp (+92 317 9284938)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-24 border-t border-agency-border bg-agency-card/30">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-3 block">FAQ</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">Frequently Asked Questions</h2>
+                <p class="text-agency-muted font-light">Everything you need to know about working with our branding agency.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-agency-card border border-agency-border rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left font-semibold flex items-center justify-between text-white hover:text-indigo-400 transition-colors">
+                        <span>1. What branding services do you provide?</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-agency-muted text-sm font-light leading-relaxed">
+                        We provide comprehensive branding services including brand strategy, custom logo design, full visual identity systems, brand guidelines, social media branding, packaging design, marketing materials, and creative direction.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-agency-card border border-agency-border rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left font-semibold flex items-center justify-between text-white hover:text-indigo-400 transition-colors">
+                        <span>2. Can you create a complete brand identity?</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-agency-muted text-sm font-light leading-relaxed">
+                        Yes! We specialize in crafting complete, cohesive brand identity systems that cover typography, color palettes, stationery, digital templates, and detailed brand guidelines.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-agency-card border border-agency-border rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left font-semibold flex items-center justify-between text-white hover:text-indigo-400 transition-colors">
+                        <span>3. Do you design logos?</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-agency-muted text-sm font-light leading-relaxed">
+                        Absolutely. We craft bespoke, memorable primary and secondary logomarks engineered for instant brand recognition across digital and physical mediums.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-agency-card border border-agency-border rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left font-semibold flex items-center justify-between text-white hover:text-indigo-400 transition-colors">
+                        <span>4. Can you help with social media branding?</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-agency-muted text-sm font-light leading-relaxed">
+                        Yes, we design custom social media branding kits including editable post templates, highlight covers, banner assets, and visual frameworks for high engagement.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-agency-card border border-agency-border rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left font-semibold flex items-center justify-between text-white hover:text-indigo-400 transition-colors">
+                        <span>5. Do you provide packaging design?</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-agency-muted text-sm font-light leading-relaxed">
+                        Yes, we create tactile product packaging and unboxing experiences designed to captivate buyers on shelves and elevate your product presentation.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-agency-card border border-agency-border rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left font-semibold flex items-center justify-between text-white hover:text-indigo-400 transition-colors">
+                        <span>6. Can I request a custom branding package?</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-agency-muted text-sm font-light leading-relaxed">
+                        Yes! We tailor our scopes to fit your exact project requirements, whether you are launching a startup or executing a global enterprise rebrand.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="bg-agency-card border border-agency-border rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-5 text-left font-semibold flex items-center justify-between text-white hover:text-indigo-400 transition-colors">
+                        <span>7. How can I start a project?</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-agency-muted text-sm font-light leading-relaxed space-y-4">
+                        <p>You can start immediately by reaching out via our inquiry form or connecting with us directly on WhatsApp.</p>
+                        <a href="https://wa.me/923179284938" target="_blank" class="inline-block bg-indigo-600 text-white text-xs uppercase tracking-widest font-semibold px-6 py-3 rounded-full">
+                            Start on WhatsApp (+92 317 9284938)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-24 border-t border-agency-border glow-effect">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <span class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-3 block">Get Started Today</span>
+            <h2 class="text-3xl sm:text-6xl font-extrabold tracking-tight mb-6">Ready to Build a Stronger Brand?</h2>
+            <p class="text-agency-muted text-lg font-light max-w-2xl mx-auto mb-10">
+                Let's discuss your brand, creative direction and next project. We are available worldwide for remote and project-based work.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/923179284938" target="_blank" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm tracking-wider uppercase px-8 py-4 rounded-full transition-all shadow-lg shadow-indigo-600/30">
+                    Start a Project on WhatsApp
+                </a>
+                <a href="tel:+923179284938" class="w-full sm:w-auto border border-agency-border hover:border-indigo-500 text-white font-medium text-sm tracking-wider uppercase px-8 py-4 rounded-full transition-all">
+                    Call: 03179284938
+                </a>
+            </div>
+            <p class="text-xs text-agency-muted mt-6">Visible WhatsApp: <a href="https://wa.me/923179284938" target="_blank" class="text-white underline">+92 317 9284938</a></p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 border-t border-agency-border bg-agency-card/30">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <div class="lg:col-span-5">
+                <span class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-3 block">Contact Us</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-6">Let's Talk About Your Brand</h2>
+                <p class="text-agency-muted font-light leading-relaxed mb-8">
+                    We accept worldwide remote and project-based work. Reach out directly or complete our project inquiry form.
+                </p>
+
+                <div class="space-y-4 text-sm font-medium mb-8">
+                    <p class="flex items-center gap-3">
+                        <span class="text-indigo-400 font-mono">Agency:</span> 
+                        <span class="text-white">Branding Agency</span>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="text-indigo-400 font-mono">Phone:</span> 
+                        <a href="tel:+923179284938" class="text-white hover:underline">03179284938</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="text-indigo-400 font-mono">WhatsApp:</span> 
+                        <a href="https://wa.me/923179284938" target="_blank" class="text-white hover:underline">+92 317 9284938</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="text-indigo-400 font-mono">Email:</span> 
+                        <a href="mailto:brandingagency56@gmail.com" class="text-white hover:underline">brandingagency56@gmail.com</a>
+                    </p>
+                </div>
+
+                <a href="https://wa.me/923179284938" target="_blank" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs uppercase tracking-widest font-semibold px-8 py-4 rounded-full transition-all shadow-lg shadow-indigo-600/30">
+                    Chat on WhatsApp
+                </a>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="lg:col-span-7 bg-agency-card border border-agency-border p-8 sm:p-12 rounded-3xl">
+                <form id="inquiry-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest text-agency-muted mb-2">Your Name *</label>
+                            <input type="text" id="form-name" required class="w-full bg-agency-dark border border-agency-border rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest text-agency-muted mb-2">Business / Brand Name *</label>
+                            <input type="text" id="form-brand" required class="w-full bg-agency-dark border border-agency-border rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Company Name">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest text-agency-muted mb-2">Email Address *</label>
+                            <input type="email" id="form-email" required class="w-full bg-agency-dark border border-agency-border rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="john@company.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest text-agency-muted mb-2">Phone Number *</label>
+                            <input type="tel" id="form-phone" required class="w-full bg-agency-dark border border-agency-border rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="+1 (555) 000-0000">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase tracking-widest text-agency-muted mb-2">Service Required *</label>
+                        <select id="form-service" required class="w-full bg-agency-dark border border-agency-border rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                            <option value="" disabled selected>Select a branding service</option>
+                            <option value="Brand Strategy">Brand Strategy</option>
+                            <option value="Logo Design">Logo Design</option>
+                            <option value="Complete Brand Identity">Complete Brand Identity</option>
+                            <option value="Social Media Branding">Social Media Branding</option>
+                            <option value="Packaging Design">Packaging Design</option>
+                            <option value="Marketing Design">Marketing Design</option>
+                            <option value="Brand Refresh">Brand Refresh</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase tracking-widest text-agency-muted mb-2">Project Details *</label>
+                        <textarea id="form-details" rows="4" required class="w-full bg-agency-dark border border-agency-border rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Tell us about your brand, goals and timeline..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-xs tracking-widest uppercase py-4 rounded-xl transition-all shadow-lg shadow-indigo-600/30">
+                        Send Inquiry
+                    </button>
+
+                    <!-- Success Feedback State -->
+                    <div id="form-success" class="hidden p-6 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 text-center space-y-4">
+                        <p class="text-sm text-white font-medium">Your inquiry is ready. Continue the conversation on WhatsApp.</p>
+                        <a href="https://wa.me/923179284938" target="_blank" class="inline-block bg-indigo-600 text-white text-xs uppercase tracking-widest font-semibold px-6 py-3 rounded-full">
+                            Continue on WhatsApp
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-agency-border py-16 bg-agency-dark">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+            <!-- Col 1 -->
+            <div class="lg:col-span-2 space-y-4">
+                <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-indigo-500 inline-block"></span>
+                    Branding Agency
+                </h3>
+                <p class="text-agency-muted text-sm font-light leading-relaxed max-w-sm">
+                    Strategic branding and creative design solutions for businesses looking to build a strong and memorable identity.
+                </p>
+                <div class="pt-2">
+                    <a href="https://wa.me/923179284938" target="_blank" class="inline-block bg-indigo-600 text-white text-xs uppercase tracking-widest font-semibold px-6 py-3 rounded-full hover:bg-indigo-500 transition-all">
+                        Start Your Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Col 2 -->
+            <div>
+                <h4 class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-4">Quick Links</h4>
+                <ul class="space-y-2.5 text-sm text-agency-muted">
+                    <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                    <li><a href="#identity" class="hover:text-white transition-colors">Brand Identity</a></li>
+                    <li><a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a></li>
+                    <li><a href="#process" class="hover:text-white transition-colors">Process</a></li>
+                    <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                    <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3 -->
+            <div>
+                <h4 class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-4">Services</h4>
+                <ul class="space-y-2.5 text-sm text-agency-muted">
+                    <li><a href="#services" class="hover:text-white transition-colors">Brand Strategy</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Logo Design</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Visual Identity</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Social Media Branding</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Packaging Design</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Marketing Design</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4 -->
+            <div>
+                <h4 class="text-xs uppercase tracking-widest text-indigo-400 font-mono mb-4">Contact</h4>
+                <ul class="space-y-2.5 text-sm text-agency-muted">
+                    <li>Phone: <a href="tel:+923179284938" class="text-white hover:underline">03179284938</a></li>
+                    <li>WhatsApp: <a href="https://wa.me/923179284938" target="_blank" class="text-white hover:underline">+92 317 9284938</a></li>
+                    <li>Email: <a href="mailto:brandingagency56@gmail.com" class="text-white hover:underline">brandingagency56@gmail.com</a></li>
+                    <li class="pt-2"><span class="text-white font-medium">Worldwide</span> — Remote & Project-Based</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-agency-border flex flex-col sm:flex-row items-center justify-between text-xs text-agency-muted">
+            <p>&copy; <span id="current-year"></span> Branding Agency. All rights reserved.</p>
+            <p class="mt-2 sm:mt-0">Available Worldwide for Remote & Project-Based Work</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT INTERACTIONS -->
+    <script>
+        // Automatic current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Sticky navbar shadow on scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-xl', 'border-indigo-500/20');
+            } else {
+                navbar.classList.remove('shadow-xl', 'border-indigo-500/20');
+            }
+        });
+
+        // Brand Personality Selector Data
+        const personalities = {
+            minimal: {
+                tag: "Minimalist Direction",
+                title: "Clean Whitespace & Precision",
+                desc: "Prioritizes clarity, subtle contrast, generous whitespace, and restrained typography for refined sophistication.",
+                font: "Sans-Serif / Clean",
+                color: "Monochromatic & Neutral",
+                tone: "Sophisticated & Restrained"
+            },
+            bold: {
+                tag: "Bold Direction",
+                title: "High Impact & Unapologetic",
+                desc: "Features heavy typography, high contrast color pairings, and assertive layouts designed to dominate attention.",
+                font: "Heavy Display / Grotesk",
+                color: "Vibrant & High Contrast",
+                tone: "Confident & Disruptive"
+            },
+            elegant: {
+                tag: "Elegant Direction",
+                title: "Timeless Sophistication & Grace",
+                desc: "Blends refined serif typography with delicate framing, balanced proportion, and understated luxury palettes.",
+                font: "Editorial Serif",
+                color: "Deep Muted & Gold Accents",
+                tone: "Graceful & Luxurious"
+            },
+            modern: {
+                tag: "Modern Direction",
+                title: "Cutting-Edge & Digital Native",
+                desc: "Employs contemporary geometry, vibrant gradients, asymmetric grids, and futuristic identity frameworks.",
+                font: "Geometric Sans",
+                color: "Neon Accents & Dark Base",
+                tone: "Innovative & Progressive"
+            },
+            playful: {
+                tag: "Playful Direction",
+                title: "Expressive & Approachable",
+                desc: "Uses friendly curvature, vibrant energetic color pops, and expressive visual motifs to engage audiences warmly.",
+                font: "Rounded Sans / Organic",
+                color: "Vibrant & Warm Pastels",
+                tone: "Approachable & Creative"
+            },
+            premium: {
+                tag: "Premium Direction",
+                title: "Exclusive & Elite Craft",
+                desc: "Delivers immaculate attention to detail, premium textures, sophisticated spacing, and elite corporate authority.",
+                font: "Refined Serif & Sans",
+                color: "Obsidian & Metallic",
+                tone: "Elite & Authoritative"
+            }
+        };
+
+        function setPersonality(type) {
+            document.querySelectorAll('.personality-btn').forEach(btn => {
+                btn.classList.remove('border-indigo-500', 'bg-indigo-600/20');
+            });
+            event.currentTarget.classList.add('border-indigo-500', 'bg-indigo-600/20');
+
+            const data = personalities[type];
+            document.getElementById('p-tag').textContent = data.tag;
+            document.getElementById('p-title').textContent = data.title;
+            document.getElementById('p-desc').textContent = data.desc;
+            document.getElementById('p-font').textContent = data.font;
+            document.getElementById('p-color').textContent = data.color;
+            document.getElementById('p-tone').textContent = data.tone;
+        }
+
+        // Branding Services Selector Data
+        const serviceNeeds = {
+            logo: {
+                title: "New Logo Design",
+                desc: "Custom, memorable primary logomark and responsive vector assets engineered to capture your brand essence."
+            },
+            identity: {
+                title: "Complete Brand Identity",
+                desc: "End-to-end visual ecosystem including logo system, color palettes, typography hierarchy, and brand guidelines."
+            },
+            social: {
+                title: "Social Media Branding",
+                desc: "Custom profile assets, editable templates, highlight icons, and visual frameworks for high social engagement."
+            },
+            packaging: {
+                title: "Packaging Design",
+                desc: "Tactile product packaging and unboxing experiences engineered to dominate shelves and delight buyers."
+            },
+            refresh: {
+                title: "Brand Refresh",
+                desc: "Strategic modernization of your existing visual identity to align with new market positioning and growth phases."
+            },
+            marketing: {
+                title: "Marketing Design",
+                desc: "High-converting pitch decks, brochures, corporate stationery, and advertising collateral designed to convert."
+            }
+        };
+
+        function setServiceNeed(type) {
+            document.querySelectorAll('.service-need-btn').forEach(btn => {
+                btn.classList.remove('border-indigo-500', 'bg-indigo-600/20');
+            });
+            event.currentTarget.classList.add('border-indigo-500', 'bg-indigo-600/20');
+
+            const data = serviceNeeds[type];
+            document.getElementById('sn-title').textContent = data.title;
+            document.getElementById('sn-desc').textContent = data.desc;
+        }
+
+        // FAQ Accordion
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('svg');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Contact Form Submission
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('form-name').value;
+            const brand = document.getElementById('form-brand').value;
+            const email = document.getElementById('form-email').value;
+            const phone = document.getElementById('form-phone').value;
+            const service = document.getElementById('form-service').value;
+            const details = document.getElementById('form-details').value;
+
+            if (name && brand && email && phone && service && details) {
+                document.getElementById('inquiry-form').querySelector('button[type="submit"]').style.display = 'none';
+                document.getElementById('form-success').classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
